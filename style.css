@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    color:#e50914;
+    background-color: white;
+    border-radius: 50%;
+}
+input{
+    caret-color:red;
+}
+body{
+    margin:0px;
+    width:100vw;
+    height: 100vh;
+    background-color: #ecf0f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    text-align: center;
+    overflow: hidden;
+    font-family: poppins;
+}
+.form-container{
+    position: absolute;
+    width:350px;
+    height: 500px;
+    padding:40px;
+    /* padding-bottom: 70px !important; */
+    border-radius:20px;
+    background-color: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white ;
+}
+.brand-logo{
+    transition: 0.4s;
+    height: 100px;
+    width: 100px;
+    background: url("netflix.png");
+    background-size: cover;
+    margin:auto;
+    border-radius: 50%;
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white ;
+}
+.brand-title{
+    margin-top: 10px;
+    font-weight: 900;
+    font-size:1.8rem;
+    color:#e50914;
+    letter-spacing: 2px;
+}
+input{
+    text-align: left;
+    margin-top: 30px;
+}
+label, input, button{
+ display: block;
+ width: 100%;
+ padding: 0px;
+ border:none;
+ outline:none;
+}
+input{
+    background: #ecf0f3;
+    padding:10px;
+    padding-left:20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius:50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+label{
+    margin-bottom: 0px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+label:nth-of-type(2){
+    margin-top: 20px;
+}
+input::placeholder{
+    color:gray;
+}
+button{
+    color:white;
+    margin-top:20px;
+    background-color: #e50914;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+}
+button:hover{
+    box-shadow: none;
+}
+.brand-logo:hover{
+    box-shadow: none;
+}
+.creator{
+    position: absolute;
+    bottom:4px;
+    right: 4px;
+    color:#000;
+    background-color: #ffff00;
+    text-decoration: none;
+}
